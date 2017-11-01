@@ -2,7 +2,7 @@
 
 Luis Diaz
 
-Patrick Wong - 916206894
+Patrick Wong - 916206894 - pwong3@mail.sfsu.edu
 
 - TODO
 - Change the name of the repo to csc413-tankgame-teamNN where NN is your team number.
