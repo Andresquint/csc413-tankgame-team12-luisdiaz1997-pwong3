@@ -1,6 +1,6 @@
 # csc413-tankgame
 
-Luis Diaz
+Luis Chumpitaz - 916114048 - lchumpit@mail.sfsu.edu
 
 Patrick Wong - 916206894 - pwong3@mail.sfsu.edu
 
