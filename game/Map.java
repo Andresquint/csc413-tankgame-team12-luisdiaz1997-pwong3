@@ -9,6 +9,27 @@
  * @author luisf
  */
 package game;
-public class Map {
+import java.awt.*;
+import javax.swing.*;
+public class Map extends JFrame
+{
+    
+    public Map(String input)
+    {
+        super(input);   
+    }
+    
+    public void run()
+    {
+        this.addPanel();
+        this.setVisible(true);
+    }
+   
+    public void addPanel ()
+    {
+        Drawer draw = new Drawer();
+        this.add(draw);
+       
+    }
     
 }
