@@ -10,5 +10,25 @@
  */
 package game;
 public class Wall {
+    private int[][] fixedWall = new int [40][40];
+    private int[][] destWall = new int [40][40];
+
+    public int[][] getFixedWall() {
+        return fixedWall;
+    }
+
+    public void setFixedWall(int[][] fixedWall) {
+        this.fixedWall = fixedWall;
+    }
+
+    public int[][] getDestWall() {
+        return destWall;
+    }
+
+    public void setDestWall(int[][] destWall) {
+        this.destWall = destWall;
+    }
+    
+    
     
 }

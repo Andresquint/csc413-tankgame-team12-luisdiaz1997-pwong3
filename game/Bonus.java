@@ -10,5 +10,23 @@
  */
 package game;
 public class Bonus {
+    private int powerUp;
+    private int shield;
+
+    public int getPowerUp() {
+        return powerUp;
+    }
+
+    public void setPowerUp(int powerUp) {
+        this.powerUp = powerUp;
+    }
+
+    public int getShield() {
+        return shield;
+    }
+
+    public void setShield(int shield) {
+        this.shield = shield;
+    }
     
 }
