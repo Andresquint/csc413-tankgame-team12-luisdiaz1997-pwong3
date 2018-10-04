@@ -9,10 +9,24 @@
  * @author luisf
  */
 package game;
-public class Bonus {
-    private int powerUp;
-    private int shield;
 
+import java.awt.Image;
+import javax.swing.ImageIcon;
+
+public class Bonus extends Sprite
+{
+    private int powerUp;
+    int shield;
+    int health;
+    private int[] velocity = new int[2];
+    private int[] position = new int[2];
+    String sep = System.getProperty("file.separator");
+    Image img = null;
+
+    public Bonus()
+    {
+        
+    }
     public int getPowerUp() {
         return powerUp;
     }
@@ -28,5 +42,38 @@ public class Bonus {
     public void setShield(int shield) {
         this.shield = shield;
     }
-    
+
+    @Override
+    int[] getPosition() 
+    {
+        
+        return position;
+    }
+
+    @Override
+    int getHealth() 
+    {
+         
+        return health;
+    }
+
+    @Override
+    int[] getVelocity() 
+    {
+        return velocity;
+    }
+
+    @Override
+    Image getImage() 
+    {
+        if (powerUp == 0)
+        {
+            img = new ImageIcon("images"+ sep +"shield.png").getImage();
+        }
+        if (powerUp == 1)
+        {
+            img = new ImageIcon("images"+ sep +"heart.png   ").getImage();
+        }
+        return img;
+    }
 }
